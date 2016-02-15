@@ -1,6 +1,6 @@
 # Star City Code School - Fenrir
 
-![Star City Code School - Fenrir](/sccs_logo.png)
+<img src="/sccs_logo.png" width="150">
 
 This repository is the central hub for Star City Code School - Fenrir students (March 2016 -
 June 2016). This is where we'll gather, post assignments, and do a few other things.
