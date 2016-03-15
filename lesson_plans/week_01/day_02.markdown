@@ -33,11 +33,23 @@
 
 ---
 
+## What is the path from creating a new file in my Git repository to seeing that file on GitHub?
+
+---
+
+## What is the difference between `git add .` and `git commit`
+
+---
+
 # Homework Review
 
 ---
 
 # Ruby, Top to Bottom
+
+---
+
+## [BBatsov's Style Guide](https://github.com/bbatsov/ruby-style-guide)
 
 ---
 
@@ -214,6 +226,10 @@ Within the context of boolean logic:
 
 ---
 
+## Don't nest more than two layers deep
+
+---
+
 # Loops
 
 ---
@@ -221,6 +237,10 @@ Within the context of boolean logic:
 + prefer `while` for sentinel controlled loops
 + prefer `.times do` for counter-controlled loops
 + prefer `.each`, `.map`, or `.select` when working with collections 
+
+---
+
+## Don't nest more than two layers deep
 
 ---
 
@@ -355,6 +375,17 @@ Within the context of boolean logic:
 
 ---
 
+```ruby
+
+  12.times.each do |n|
+    puts "#{n}: Hello!"
+  end
+```
+
+---
+
+# Exceptions
+
 ---
 
 # Sandi Metz's Rules
@@ -365,11 +396,11 @@ Within the context of boolean logic:
 
 ---
 
-## 2. No method should have more than 5 lines of code
+## 2. _No method should have more than 5 lines of code_
 
 ---
 
-## 3. No method should take more than 4 parameters (each hash option counts as a parameter)
+## 3. _No method should take more than 4 parameters (each hash option counts as a parameter)_
 
 ---
 
@@ -377,6 +408,7 @@ Within the context of boolean logic:
 
 ---
 
+### Secret Rule 0: Break these rules if you have good reason
 
 ---
 
@@ -393,3 +425,11 @@ Within the context of boolean logic:
 ---
 
 ### What did you notice about doing this refactoring? What was challenging? What was easy? What surprised you? Do you feel like your code is better? Worse? The same?
+
+---
+
+# Secret Bonus Homework
+
+Look at  `tests/date_validator_test.rb` and (if you got this far) `tests/coprimality_test.rb`. This is the code that is run when you run `rake`. See if you can figure out what the different parts are. 
+
+As a hint, this is _Minitest_.
