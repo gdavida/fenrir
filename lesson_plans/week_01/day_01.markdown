@@ -112,6 +112,10 @@
 
 ---
 
+[link to video](https://www.youtube.com/watch?v=0PBwbhPV9ek&feature=youtu.be)
+
+---
+
 ### `git clone`
 
 ---
