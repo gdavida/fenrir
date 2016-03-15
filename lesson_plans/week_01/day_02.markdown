@@ -13,6 +13,13 @@
 
 ---
 
+# Videos
+
+1. [Part 1](https://www.youtube.com/watch?v=7_Tb7MXxrps&feature=youtu.be)
+2. [Part 2]()
+
+---
+
 # Check In
 
 ---
@@ -125,16 +132,6 @@ instead of
 
 ---
 
-## Use compound assignment operators when possible:
-
-+ `+=`
-+ `-=`
-+ `*=`
-
-Avoid `/=` and `%=`
-
----
-
 ## Good
 
 + `wombat_wrangler`
@@ -161,6 +158,16 @@ Avoid `/=` and `%=`
 + Explicit casting where appropriate
 + Break a complex operation into simpler parts wherever possible
 + Favor readability
+
+---
+
+## Use compound assignment operators when possible:
+
++ `+=`
++ `-=`
++ `*=`
+
+Avoid `/=` and `%=`
 
 ---
 
