@@ -38,7 +38,9 @@ def valid_date?(month, day, year)
   ########################
 
   # Determine if we've got a leap year
-  leap_year = year % 4 == 0 && year % 100 != 0 || year % 400 == 0
+  leap_year = determine_if_leap_year(year)
+
+  ########################
 
   if month == 2 && leap_year
     if day < 1 || day > 29
@@ -73,6 +75,12 @@ def validate_month(month)
   month >= 1 && month <= 12
 end
 
+# Validates the year (expressed as integer)
+# Year should be between 1880 and 2280
+#
+# + year: integer representing year
+#
+# Returns true if the year is good, otherwise false
 def validate_year(year)
   if year < 1880 || year > 2280
     false
@@ -80,3 +88,13 @@ def validate_year(year)
     true
   end
 end
+
+# Determines if we've got a leap year
+#
+# + year: integer representing the year
+#
+# Returns true if YEAR is a leap year, otherwise false
+def determine_if_leap_year(year)
+  year % 4 == 0 && year % 100 != 0 || year % 400 == 0
+end
+
