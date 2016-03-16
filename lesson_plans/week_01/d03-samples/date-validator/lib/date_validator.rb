@@ -18,9 +18,6 @@ require 'pry'
 
 def valid_date?(month, day, year)
   
-  # Assume a good date unless told otherwise
-  valid_date = true
-  
   #### VALIDATE MONTH ###
   month_valid = validate_month(month)
 
@@ -40,9 +37,7 @@ def valid_date?(month, day, year)
   
   # binding.pry
 
-  valid_date = day_valid && year_valid && month_valid
-
-  valid_date
+  day_valid && year_valid && month_valid
 end
 
 # Validates the month (expressed as integer)
