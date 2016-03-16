@@ -17,27 +17,9 @@
 require 'pry'
 
 def valid_date?(month, day, year)
-  
-  #### VALIDATE MONTH ###
-  month_valid = validate_month(month)
-
-  ########################
-
-  year_valid = validate_year(year)
-  ########################
-
-  # Determine if we've got a leap year
-  leap_year = determine_if_leap_year(year)
-
-  ########################
-
-  day_valid = validate_day(day, month, leap_year)
-
-  # valid_date = !(day_valid == false || year_valid == false || month_valid == false)
-  
-  # binding.pry
-
-  day_valid && year_valid && month_valid
+  validate_day(day, month, year) &&
+  validate_year(year) && 
+  validate_month(month)
 end
 
 # Validates the month (expressed as integer)
@@ -68,31 +50,54 @@ def determine_if_leap_year(year)
   year % 4 == 0 && year % 100 != 0 || year % 400 == 0
 end
 
-def validate_day(day, month, leap_year)
-  day_valid = true
-  
-  if month == 2 && leap_year
-    if day < 1 || day > 29
-      day_valid = false
-    end
-  elsif month == 2 && ! leap_year
-    if day < 1 || day > 28
-      day_valid = false
-    end
-  elsif month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12
-    if day < 1 || day > 31
-      day_valid = false
-    end
-  elsif month == 4 || month == 6 || month == 9 || month == 11
-    if day < 1 || day > 30
-      day_valid = false
-    end
-  else
-    # month isn't listed
-    day_valid = false
-  end
-
-  day_valid
+# Determines whether the day exists within the month in question
+#
+# + day: integer for the day part of the date
+# + month: integer for the month part of the date
+# + year: integer for the year part of the date
+#
+# Returns true or false, depending on if the day actually exists
+def validate_day(day, month, year)
+  day >= 1 && day <= determine_days_in_month(month, year)
 end
 
-valid_date?(3, 1, 2016)
+# Determine how many days are in a given month
+#
+# + month: integer representation of the month
+# + year: integer representation of the year
+#
+# Returns 28, 29, 30, or 31, depending on how many days are in that month
+def determine_days_in_month(month, year)
+  days_in_month = {
+                    1 => 31,
+                    2 => determine_days_in_february(year), 
+                    3 => 31,
+                    4 => 30,
+                    5 => 31,
+                    6 => 30,
+                    7 => 31,
+                    8 => 31,
+                    9 => 30,
+                    10 => 31,
+                    11 => 30,
+                    12 => 31
+                  }
+
+  days_in_month.default = 0
+
+  days_in_month[month]
+end
+
+# Helper method to determine how many days are in February
+# based on whether the year is a leap year
+#
+# + year: integer representation of the year
+#
+# Returns either 28 or 29, depending on if the year is a leap year
+def determine_days_in_february(year)
+  if determine_if_leap_year(year)
+    29
+  else
+    28
+  end
+end
