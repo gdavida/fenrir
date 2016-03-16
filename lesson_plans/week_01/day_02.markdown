@@ -16,7 +16,7 @@
 # Videos
 
 1. [Part 1](https://www.youtube.com/watch?v=7_Tb7MXxrps&feature=youtu.be)
-2. [Part 2]()
+2. [Part 2](https://www.youtube.com/watch?v=z_B5UIgKgcI&feature=youtu.be)
 
 ---
 
