@@ -82,11 +82,7 @@ end
 #
 # Returns true if the year is good, otherwise false
 def validate_year(year)
-  if year < 1880 || year > 2280
-    false
-  else
-    true
-  end
+  year >= 1880 && year <= 2280
 end
 
 # Determines if we've got a leap year
