@@ -14,14 +14,20 @@
 #
 # This method should, in its final form, not do any output.
 
+require 'pry'
+
 def valid_date?(month, day, year)
   
   # Assume a good date unless told otherwise
   valid_date = true
   
-  if month < 1 || month > 12
+  #### VALIDATE MONTH ###
+  month_valid = validate_month(month)
+
+  if month_valid == false
     valid_date = false
   end
+  ########################
 
   if year < 1880 || year > 2280
     valid_date = false
@@ -52,4 +58,21 @@ def valid_date?(month, day, year)
   end
 
   valid_date
+end
+
+# Validates the month (expressed as integer)
+# 
+# + month: integer representation of month (e.g. Jan = 1)
+# 
+# Returns true if the month is valid, otherwise returns false
+def validate_month(month)
+  month >= 1 && month <= 12
+end
+
+def validate_year(year)
+  if year < 1880 || year > 2280
+    false
+  else
+    true
+  end
 end
