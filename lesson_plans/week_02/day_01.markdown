@@ -28,6 +28,14 @@
 
 ---
 
+# Clean-Up
+
++ Indentation
++ Documentation
++ Only one `return` (even if it's implicit)
+
+---
+
 # More Advanced Methods
 ![](https://www.kodiak.org/uploads/gallery_slides/image/.1400x800/bears_8.jpg)
 
