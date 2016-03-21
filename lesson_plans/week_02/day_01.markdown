@@ -762,6 +762,12 @@ Read through [this article](http://www.daedtech.com/solid-principles-real-life/)
 
 ---
 
+# Bonus Homework
+
+Learn about [*Keyword Arguments*](https://robots.thoughtbot.com/ruby-2-keyword-arguments)
+
+---
+
 # Tomorrow
 ![](http://kodiakbearcenter.com/wp-content/uploads/2015/03/bears.jpg)
 
