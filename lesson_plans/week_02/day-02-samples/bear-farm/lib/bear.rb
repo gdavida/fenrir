@@ -16,8 +16,17 @@ class Bear
     @farm
   end
 
+  def itself
+    self
+  end
+
+  def plant_farm
+    farm.plant
+  end
+
   def farm=(farm)
     @farm = farm
+    farm.bear = self
   end
 
   def age=(new_age)
@@ -33,3 +42,4 @@ class Bear
   end
 end
 
+binding.pry

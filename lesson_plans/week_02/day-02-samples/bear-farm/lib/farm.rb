@@ -10,6 +10,14 @@ class Farm
     @harvest_method = harvest_method
   end
 
+  def bear
+    @bear
+  end
+
+  def bear=(bear)
+    @bear = bear
+  end
+
   def plant
     if @planted
       "Already planted"
