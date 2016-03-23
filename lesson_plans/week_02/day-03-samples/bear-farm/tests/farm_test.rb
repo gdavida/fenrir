@@ -57,7 +57,8 @@ class FarmTest < Minitest::Test
     farm = Farm.new(acres: 22, crop: "bananas", planted: false, harvest_method: :hand)
     bear = Bear.new(name: "Yogi", age: 78, height: "9-3", humans_eaten: 17)
 
-    bear.farm = farm
+    bear.acquires_farm(farm)
+
     assert_equal(farm, bear.farm)
 
     assert_equal(bear, farm.bear)

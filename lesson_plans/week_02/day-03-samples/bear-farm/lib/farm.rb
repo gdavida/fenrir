@@ -8,6 +8,7 @@ class Farm
     @crop = crop
     @planted = planted
     @harvest_method = harvest_method
+    @bear = nil
   end
 
   def bear

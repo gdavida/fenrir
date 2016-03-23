@@ -24,9 +24,17 @@ class Bear
     farm.plant
   end
 
-  def farm=(farm)
-    @farm = farm
-    farm.bear = self
+  def acquires_farm(new_farm)
+    if new_farm.bear.nil?
+      disowns_farm if @farm
+      @farm = new_farm
+      new_farm.bear = self
+    end
+  end
+
+  def disowns_farm
+    @farm.bear = nil
+    @farm = nil
   end
 
   def age=(new_age)
