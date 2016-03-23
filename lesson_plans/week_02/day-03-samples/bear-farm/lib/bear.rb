@@ -50,4 +50,3 @@ class Bear
   end
 end
 
-binding.pry
