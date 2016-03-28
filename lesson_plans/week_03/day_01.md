@@ -163,7 +163,7 @@ This allows us to make *CRUD* applications, wherein we can:
 + **C**reate records
 + **R**ead records
 + **U**pdate records
-+ **D**destroy records
++ **D**estroy records
 
 ---
 
@@ -329,7 +329,7 @@ We'll need to add `ActiveRecord` and a Postgresql database adapter to our projec
 gem "pg"
 
 # ActiveRecord wraps around the database
-gem "activrecord"
+gem "activerecord"
 ```
 ---
 
@@ -432,6 +432,19 @@ require "yaml"
 
 connection_details = YAML::load(File.open('config/database.yml'))
 ActiveRecord::Base.establish_connection(connection_details)
+```
+
+---
+
+# ActiveRecord: Setup
+
+```ruby
+  # database.yml
+  host: 'localhost'
+  adapter: 'postgresql'
+  database: 'bug-tracker'
+  encoding: 'utf8'
+  pool: 5
 ```
 
 ---
@@ -847,18 +860,23 @@ end
 
 ---
 
-# Homework
+# Homework: A
+
+If we're going to make use of ActiveRecord, we'll need to become more comfortable with the ActiveRecord methods. Clone and set up the BugTracker thus far (don't worry about forking it) and create some records. Then try out the ActiveRecord methods listed in the issue.
+
+---
+
+# Homework: B
+
+Add a `Researcher` model, with `name` (string) and `age` (integer) columns.  They'll need to be in their own table. Tomorrow we'll get our insects and our researchers talking.
+
+---
+
+# Homework: C
 
 Add a database backing to your class. Go the long way and follow the steps outlined here. From tomorrow onward, we'll have some convenient starter projects to use (how much of a pain would it be if we had to do this every time?).
 
 ---
-
-# Homework
-
-Additionally, if we're going to make use of ActiveRecord, we'll need to become more comfortable with the ActiveRecord methods. Clone and set up the BugTracker thus far (don't worry about forking it) and create some records. Then try out the ActiveRecord methods listed in the issue.
-
----
-
 # Tomorrow and Beyond
 ![](http://www.coolwallpapers.org/photo/54869/Insects_Wallpapers-3.jpg)
 
