@@ -781,11 +781,6 @@ Of note: ActiveRecord creates an `id` for us; we'll never set the ID directly, a
 
 ---
 
-# Active Record :CRUD Functions
-![](http://static.thetechjournal.net/wp-content/uploads/2014/04/Insect-Sleeping.jpg)
-
----
-
 #Active Record: CRUD Functions
 ![](http://www.pets4homes.co.uk/images/articles/1060/large/10-misconceptions-people-commonly-hold-about-insects-521d0129cd234.jpg)
 
@@ -824,7 +819,6 @@ i.update_attributes(name: "Ek's Fuzzy Mantis")
 i = Insect.find_by_id(13)
 i.destroy
 ```
-
 ---
 
 ![](http://www.pets4homes.co.uk/images/articles/1060/large/10-misconceptions-people-commonly-hold-about-insects-521d0129cd234.jpg)
@@ -849,7 +843,6 @@ end
 ```
 
 ---
-
 
 ![](http://www.hdfinewallpapers.com/HDWallpapers/Big/Insects/Colorful_Beetle_Insect_HD_Wallpapers.jpg)
 
@@ -901,12 +894,13 @@ On Thursday and Friday, you'll be building a project.
 ---
 
 # Next Week
-
-Next week, we'll take our models and give them a web interface.
+![](http://www.lazerhorse.org/wp-content/uploads/2014/03/Vasiliy-Menshov-macro-insect-photos-3.jpg)
 
 ---
 
-![](http://www.lazerhorse.org/wp-content/uploads/2014/03/Vasiliy-Menshov-macro-insect-photos-3.jpg)
+# Next Week
+
+Next week, we'll take our models and give them a web interface.
 
 ---
 
