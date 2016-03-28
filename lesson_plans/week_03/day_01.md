@@ -9,10 +9,10 @@
 # Agenda
 
 1. Check-in
-2. Homework
-3. Preview for the Week
+2. Homework Review
 4. Some Quick Review
 5. Bug Tracker
+6. Homework for tonight
 
 ---
 
@@ -21,10 +21,6 @@
 ---
 
 # Homework
-
----
-
-# Preview of the Week
 
 ---
 
