@@ -872,7 +872,7 @@ Tomorrow, we'll do some quick review of ActiveRecord methods and we'll talk abou
 
 # Wednesday
 
-On Wednesday, we'll talk about many-to-many relationships and mapping out a path for our driver.
+On Wednesday, we'll talk about many-to-many relationships and mapping out a path for our driver. We'll also talk about feature branches.
 
 ---
 
