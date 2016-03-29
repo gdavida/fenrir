@@ -296,3 +296,5 @@ Consider adding on one or more of the following:
 
 Do some research into ActiveRecord Validations. If you want to, you can replace your `my_valid?` method with the default `valid?` method ActiveRecord provides.  See if you can make the change over. We'll work on this tomorrow.
 
+---
+
