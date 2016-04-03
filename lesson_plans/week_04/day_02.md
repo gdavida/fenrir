@@ -58,3 +58,9 @@ Build our first web application
 # Homework
 
 You'll be building a Sinatra application that takes form input and does some output. It won't save anything to a database, though may make use of helper classes.
+
+---
+
+# Homework - Bonus
+
+**Sinatra Look-and-Say**

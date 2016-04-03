@@ -43,3 +43,9 @@ Build our first MVC web application
 ---
 
 # Homework
+
+---
+
+# Homework - A
+
+**Look! A Dog!**
