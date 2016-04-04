@@ -545,11 +545,7 @@ Sketch out and build the models, complete with relationships and validators, spe
 
 # Homework - B
 
-Build your first Sinatra application. It should run, you should be able to access it through `localhost:4567`, and it should have the following routes:
-
-+ `/greeting/:name`
-+ `/even-or-odd/:number`
-+ `/shouted-greeting/:name`
+Build your first Sinatra application. It should run, you should be able to access it through `localhost:4567`, and it should have routes as specified in the assignment file.
 
 Once you're done with these, repeat them but with queries. Then consider the bonus exercises.
 
