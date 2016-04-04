@@ -388,7 +388,7 @@ Installing and setting up Sinatra can be very easy:
 
 ```ruby
 # Gemfile
-gem "sinatra
+gem "sinatra"
 ```
 ---
 
