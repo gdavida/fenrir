@@ -424,11 +424,17 @@ You'll spend Thursday and Friday (and this weekend??) rebuilding the library pro
 
 # Homework - A
 
-Recreate [this project]() using Sinatra. I'll post the source code tomorrow so you can compare. You'll have to use what you learned in class today (and up until now), but there won't be any fancy algorithms or logic.
+If you haven't already, rebuild your homework from last night using forms and views. Make sure you have a `layout.erb` file.
 
 ---
 
 # Homework - B
+
+Recreate [this project](https://enigmatic-brushlands-75017.herokuapp.com/) using Sinatra. I'll post the source code tomorrow so you can compare. You'll have to use what you learned in class today (and up until now), but there won't be any fancy algorithms or logic.
+
+---
+
+# Homework - C
 
 Play around with the various types of form inputs. You don't need to render views, per se; just make sure you know how to use each kind of form input (text, textarea, select, radio button, checkbox) in such a way that the params hash is what you expect
 
