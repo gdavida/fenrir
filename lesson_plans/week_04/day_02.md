@@ -222,6 +222,14 @@ This is all fine and good, but what if we want to pass in information?
 
 # ERB / HTML Output
 
+```html
+  <a href="dogs/#{@dog.id}"><%= @dog.name %></a>
+```
+
+---
+
+# ERB / HTML Output
+
 We can pass in objects, arrays, hashes, strings, integers -- you name it!
 
 The `@` convention simply makes that variable available to the views, rather than being constrained to just a local variable in the route action.
