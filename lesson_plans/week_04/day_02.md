@@ -401,13 +401,20 @@ We can deploy our web applications to Heroku if we so desire:
 
 ---
 
-# Tomorrow
+# Looking Forward
+
+> The future is uncertain and you will never know less than you do right now.
+-- Sandi Metz
 
 ---
 
-# Tomorrow
+# Looking Forward
 
 Tomorrow, we'll add models to our applications.
+
+On Thursday, we'll add tests and get those applications deployed.
+
+You'll spend Thursday and Friday (and this weekend??) rebuilding the library project.
 
 ---
 
