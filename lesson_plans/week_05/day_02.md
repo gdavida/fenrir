@@ -10,6 +10,7 @@ Build a substantial, self-directed MVC application
 
 # Daily Goal
 
+1. Work on Many-to-Many Relationships
 1. Finish out the **CRUD** routes
 2. Prepare to test and deploy
 3. Prepare project specifications
@@ -19,6 +20,7 @@ Build a substantial, self-directed MVC application
 # Agenda
 
 1. Homework & Check-In
+2. Many-to-Many Relationships
 2. Finish out our CRUD routes
 3. `app/views`
 5. Projects!
@@ -26,6 +28,51 @@ Build a substantial, self-directed MVC application
 ---
 
 # Homework & Check-In
+
+---
+
+# Many-to-Many Relationships
+
+---
+
+# Many-to-Many Relationships
+
+So far, we've dealt with forms and *one-to-many* relationships.
+
+Since the foreign key in a *One-to-Many* relationship is part of the model's
+attributes, we just update the foreign key.
+
+---
+
+# Many-to-Many Relationships
+
+In many-to-many relationships, we have to do a bit more work.
+
+---
+
+# Many-to-Many Relationships
+
+The easiest way to handle these relationships is one link at a time.
+
+---
+
+# Many-to-Many Relationships
+
+After the record already exists:
+
+1. Pick a record for one side of the *Many-to-Many* relationship
+2. Show all records for the other side
+3. For each of the records on the other side, show one of two forms:
+  + an "Add" button
+  + a "Remove" button
+
+(When we get to rails, we'll have idiomatic ways to make this easier)
+
+---
+
+# Many-to-Many Relationships
+
+If we're creating a new record, we can just use checkboxes. I'll leave this as an exercise for the reader.
 
 ---
 
