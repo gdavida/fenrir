@@ -39,8 +39,7 @@ Build a substantial, self-directed MVC application
 
 So far, we've dealt with forms and *one-to-many* relationships.
 
-Since the foreign key in a *One-to-Many* relationship is part of the model's
-attributes, we just update the foreign key.
+Since the foreign key in a *One-to-Many* relationship is part of the model's attributes, we just update the foreign key.
 
 ---
 
@@ -65,6 +64,10 @@ After the record already exists:
 3. For each of the records on the other side, show one of two forms:
   + an "Add" button
   + a "Remove" button
+
+---
+
+# Many-to-Many Relationships
 
 (When we get to rails, we'll have idiomatic ways to make this easier)
 
