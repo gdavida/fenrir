@@ -77,6 +77,8 @@ ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] ||
 
 (replace `mydb` with your database name from `config/database.yml`)
 
+[Learn more](https://devcenter.heroku.com/articles/rack#database-access)
+
 ---
 
 # Deployment
@@ -89,6 +91,15 @@ On the command line:
 4. `$ heroku open`
 
 If you run into problems, examine the logs: `heroku logs`
+
+---
+
+# Deployment
+
+As you make changes to your application, you can push those commits. Make sure to:
+
++ run `$ heroku run rake db:migrate` if you create new migrations
++ run `$ heroku run bundle install` if you add new gems
 
 ---
 
@@ -225,10 +236,10 @@ Your content goes in columns, which turn should be inside of rows (or other colu
 
 There are four screen sizes we might consider:
 
-+ `xs` (Extra small) -- phones, etc. (less than 768px wide)
-+ `sm` (Small) - tablets (768+ px wide)
-+ `md` (Medium) - large tablets, small desktops (992+ px wide)
-+ `lg` (Large) - Desktops (1200+ px wide)
++ `xs` (Extra small) - less than 768px wide
++ `sm` (Small) - 768+ px wide
++ `md` (Medium) - 992+ px wide
++ `lg` (Large) - 1200+ px wide
 
 ---
 
@@ -326,26 +337,26 @@ Pick one of the comps I've provided in the HW issue and see if you can build it 
 
 ---
 
-# Homework B: Try out another framework
-
-Re-do your assignment from Part A, but with *Materialize*, *Foundation*, or *Primer* (etc.).
-
-What's similar? What's different? Do you have a preference? I'll use Bootstrap for the remainder of this course as the default, but you can experiment.
-
----
-
-# Homework C: Journal Prompt
+# Homework B: Journal Prompt
 
 What are the relative advantages and disadvantages of using a front-end framework like Bootstrap? What do you gain? What do you lose?
 
 ---
 
-# Bonus Homework
+# Homework C: Common Components
 
 See if you can figure out how to create the following (with Bootstrap) using only HTML:
 
 1. A navbar (both fixed and responsive)
 3. Content that is hidden at certain screen widths
 4. Buttons with icons in them
-5. Forms with icons in them
-6. Links that are also buttons
+5. Forms with icons in the fields
+6. Links that look like buttons
+
+---
+
+# Bonus Homework: Try out another framework
+
+Re-do your assignment from Part A, but with *Materialize*, *Foundation*, or *Primer* (etc.).
+
+What's similar? What's different? Do you have a preference? I'll use Bootstrap for the remainder of this course as the default, but you can experiment.
