@@ -27,7 +27,68 @@ Learn enough Bootstrap to be dangerous
 
 ---
 
+# Show and Tell
+
+1. What is your project?
+2. Walk us through the CRUD life cycle of one type of record
+3. How did you seed it?
+
+---
+
+# Reflection
+
+1. What went well?
+2. What didn't go well?
+3. What would you do differently next time?
+
+---
+
 # Deployment
+
+---
+
+# Deployment
+
+1. Create a `config.ru` file
+2. Tell our application where to find our database
+3. Push and Deploy
+
+---
+
+# Deployment
+
+Here's our `config.ru`:
+
+```ruby
+require_relative "main.rb"
+run Sinatra::Application
+```
+
+---
+
+# Deployment
+
+We'll add this line to the top of `main.rb`:
+
+```ruby
+ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 
+  'postgres://localhost/mydb')
+```
+
+(replace `mydb` with your database name from `config/database.yml`)
+
+---
+
+# Deployment
+
+On the command line:
+
+1. `$ heroku create`
+2. `$ git push heroku master`
+3. `$ heroku run rake db:setup`
+4. `$ heroku open`
+
+If you run into problems, examine the logs: `heroku logs`
 
 ---
 
