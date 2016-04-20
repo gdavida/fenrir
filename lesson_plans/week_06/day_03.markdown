@@ -45,21 +45,10 @@ Learn some CSS so we can build some things
 
 # Common Components
 
----
-
-## Navbar
-
----
-
-## Full Header
-
----
-
-## Footer
-
----
-
-## Sidenav
+1. Navbar
+2. Full Header
+3. Footer
+4. Sidenav
 
 ---
 
@@ -181,7 +170,38 @@ With responsive design from scratch, we'll need to:
 
 ## Responsive Design from Scratch
 
+Here's an example of a media query:
+
+```css
+  @media screen and (min-width: 500px) {
+    h1 {
+      color: red;
+    }
+  }
+```
+
+Turn all `h1` elements red when the screen is at least `500px` wide. Otherwise, they're black.
+
+---
+
+## Responsive Design from Scratch
+
+The usual way to do media queries is to start from your narrowest width and work your way out wider. This lets your queries become more flexible.
+
+---
+
+## Responsive Design from Scratch
+
 Check out [this mini-tutorial](http://www.w3schools.com/css/css_rwd_mediaqueries.asp) for more about media queries.
+
+---
+
+# The Rest of the Week
+
+You have (at least) two options for tomorrow and Friday:
+
+1. Work on your project from last week
+2. Start a new project. Arrrooooooooo!
 
 ---
 
@@ -191,13 +211,13 @@ Check out [this mini-tutorial](http://www.w3schools.com/css/css_rwd_mediaqueries
 
 # Homework - A
 
-Do a front-end drill, but set a timer for 120 minutes (break this out into smaller chunks if you want). Build the site so it works both on mobile and full-screen.
+Do a front-end drill, but set a timer for 120 minutes (break this out into smaller chunks if you want). Build the site so it works both on mobile and full-screen. My preference is that you use Bootstrap for the responsive part, but you can write your media queries from scratch.
 
 ---
 
 # Homework - B
 
-Take [this basic Sinatra application]() (there aren't any models) and provide some styling per the comps.
+Take [this basic Sinatra application]() (there aren't any models) and provide some styling. It should work on both a phone (or phone-width display) and on a full-screen desktop.
 
 ---
 
