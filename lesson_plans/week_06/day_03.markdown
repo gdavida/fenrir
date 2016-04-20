@@ -21,7 +21,7 @@ Learn some CSS so we can build some things
 1. Homework & Check-In
 2. Common Components
 3. Mixing Bootstrap & Custom CSS
-4. (Optional) Responsive Design
+4. Responsive Design
 
 **We'll have a guest speaker during lunch tomorrow. Lunch is on me tomorrow.**
 
@@ -217,7 +217,7 @@ Do a front-end drill, but set a timer for 120 minutes (break this out into small
 
 # Homework - B
 
-Take [this basic Sinatra application]() (there aren't any models) and provide some styling. It should work on both a phone (or phone-width display) and on a full-screen desktop.
+Take this basic Sinatra application (there aren't any models) and provide some styling. It should work on both a phone (or phone-width display) and on a full-screen desktop.
 
 ---
 
