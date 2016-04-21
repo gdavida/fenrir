@@ -10,13 +10,23 @@ Learn some CSS so we can build some things
 
 # Daily Goal
 
-1. Given what we know, add some styles to our projects
-2. Practice "real-world" CSS
+1. Get better at CSS
+2. Begin working with designer compositions
 
 ---
 
 # Agenda
 
+1. Homework & Check-In
+2. *Howlr*
+3. Lunch-and-Learn - Gretchen Larsen
+4. Check-In (115p)
+5. Yoga (3p)
+
 ---
 
+# Homework and Check-In
 
+---
+
+# Howlr
