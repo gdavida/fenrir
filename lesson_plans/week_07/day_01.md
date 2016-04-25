@@ -285,7 +285,7 @@ Today we'll call these functions in-line. Later, we'll add event listeners dynam
 
 # Homework A
 
-Given the starter HTML, write some Javascript to complete these exercises (matching the video). The exercises might look a bit familiar. Each piece should go in its own function which you call with an `onClick` attribute.
+[Given the starter HTML](https://github.com/star-city-code-school/w07-d01-js-exercises), write some Javascript to complete these exercises (matching the specs). The exercises might look a bit familiar. Each piece should go in its own function which you call with an `onclick` attribute.
 
 If you need to, go back and review Exercises **1 - 44** in *ASWtLJ* (or equivalent material).
 
