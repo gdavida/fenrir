@@ -122,8 +122,7 @@ Javascript has strings and numeric types, just like Ruby. There are other types 
 
 # Strings and Numbers
 
-Math works just like it does in Ruby (with the same operator precedence), though
-some operators may be different.
+Math works just like it does in Ruby (with the same operator precedence), though some operators may be different.
 
 ---
 
