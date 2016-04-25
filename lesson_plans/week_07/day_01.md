@@ -56,6 +56,230 @@ Become good enough with Javascript that we can successfully execute some basic D
 
 ---
 
+# The Role of JS
+
+---
+
+# Javascript on the Page
+
+In the `head` of your document:
+
+```
+  <script src = "./myStyleSheet.js"></script>
+```
+
+---
+
+# Syntax and Style Notes
+
+1. Variables should be `camelCased` (rather than `snake_cased`).
+2. Most lines end with a `;` (semicolon) unless that line starts a block.
+3. Blocks must be surrounded by curly braces.
+4. Expect some weird inconsistencies.
+
+---
+
+# Basic Structures
+
+1. Variables
+2. Strings and numbers
+3. If-Statements
+4. Loops
+5. Arrays
+6. Functions 
+
+---
+
+# Variables
+
+Variables work almost like they do in Ruby, but with one major exception. You have to declare a variable before you can use it (otherwise you'll get weird scope errors later).
+
+---
+
+# Variables
+
+```javascript
+  var x = "This is where the treasure is";
+  console.log(x);
+```
+
+---
+
+# Strings and Numbers
+
+Javascript has strings and numeric types, just like Ruby. There are other types too (booleans, arrays, object literals, etc.), but strings and numerics are pretty common.
+
+---
+
+# Strings and Numbers
+
+```javascript
+  var x = "This is where the treasure is";
+  var doubloonCount = 5000;
+```
+
+---
+
+# Strings and Numbers
+
+Math works just like it does in Ruby (with the same operator precedence), though
+some operators may be different.
+
+---
+
+# String and Numbers
+
+Javascript also has concepts of *type coercion* and *strict equality*:
+
+```javascript
+  console.log("2" == 2);
+  console.log("2" === 2);
+```
+
+---
+
+# If-Statements
+
+```javascript
+  if (x % 2 == 1) {
+    console.log("Odd!");
+  } else if (x % 2 == 0) {
+    console.log("Even");
+  } else {
+    console.log("Neither even nor odd.");
+  }
+```
+
+---
+
+# Arrays
+
+```javascript
+  var numbers = [1, 2, 3, 4, 5];
+  var names = ["Anders", "Galen", "Tori", "Saul", "Ellen"];
+
+  console.log(names.length);
+  console.log(names[0]);
+```
+
+---
+
+# Loops
+
+1. `for` loops
+2. `while` loops
+3. `for/in` loops
+
+---
+
+# Loops
+
+```javascript
+  for (i = 0; i < names.length; i++) { 
+    console.log(names[i]);
+  }
+```
+
+---
+
+# Loops
+
+```javascript
+  var i = 0;
+  while (i < names.length) {
+    console.log(names[i];
+    i++;
+  }
+```
+
+---
+
+# Loops
+
+```javascript
+  for (name in names) {
+    console.log(name);
+  }
+```
+
+---
+
+# Functions
+
+```javascript
+  function hello(name) {
+    console.log("Hello, " + name + "!");
+  }
+
+  hello("Starbuck");
+```
+
+---
+
+# Functions
+
+```javascript
+  mySum = sum(12, 4);
+  console.log(mySum);
+  
+  function sum(a, b) {
+    return a + b;
+  }
+```
+
+---
+
+# Functions
+
+```javascript
+  
+  var firstHello = hello();
+  var secondHello = hello;
+
+  function hello() {
+    return "Howdy!";
+  }
+```
+
+---
+
+# `prompt` and `alert`
+
+It's not reasonable to expect our users to examine the console for Javascript input and output. So let's add some dynamic behaviors using `prompt` and `alert`:
+
+---
+
+# `prompt` and `alert`
+
+```javascript
+  var userInput = prompt("What's your name?");
+  alert("Your name is " + name + ".");
+```
+
+---
+
+# `prompt` and `alert`
+
+We'll add some better functionality tomorrow. For today, we're stuck with prompting and alerting.
+
+---
+
+# Our First Event Listener
+
+---
+
+# Our First Event Listener
+
+When working with the DOM (more on that tomorrow), we'll primarily work with it by defining functions that trigger when certain events happen. One of those events is the `"click"` event.
+
+Today we'll call these functions in-line. Later, we'll add event listeners dynamically.
+
+```html
+  <a href="#" onclick="sayHi();">Want to be greeted?</a>
+```
+
+---
+
 # Homework!
 
 ---
