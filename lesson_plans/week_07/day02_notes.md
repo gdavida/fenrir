@@ -50,5 +50,5 @@ Depending on your setup, you might need to reference your JS file in the head of
   **OR** `document.querySelector('div');`
 
 #Yesterday's JavaScript Homework
-<p> [Homework Assignment Solutions](https://github.com/star-city-code-school/w07-d01-js-exercises/pull/1) <br>
-The above link is but one of many ways you can get the answer. If your code works, but doesn't look like mine--don't worry, you still probably did it correctly. </p>
+[Homework Assignment Solutions](https://github.com/star-city-code-school/w07-d01-js-exercises/pull/1) <br>
+The above link is but one of many ways you can get the answer. If your code works, but doesn't look like mine--don't worry, you still probably did it correctly. 
