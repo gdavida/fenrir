@@ -39,15 +39,15 @@ Depending on your setup, you might need to reference your JS file in the head of
 
 <p>You can also select by element type, or select relative to a parent, child or neighbor( relative selection is easier in jQuery and definitely worth looking into once you are confident with JavaScript basics).</p>
 
-<p>**ID:** <br>
+**ID:** <br>
   `var VARIABLE = document.getElementById('NAMEOFID');` <br>
-  _- used to select one thing_</p>
-<p>**CLASS:**<br>
+  _- used to select one thing_<br><br>
+**CLASS:**<br>
   `var VARIABLE = document.getElementsByClassName('NAMEOFCLASS');`<br>
-   _- array/collection_</p>
-<p>**ELEMENT TYPE:** <br>
+   _- array/collection_<br><br>
+**ELEMENT TYPE:** <br>
  `var VARIABLE = document.getElementsByTagName('p');` <br>
-  **OR** `document.querySelector('div');`</p>
+  **OR** `document.querySelector('div');`
 
 #Yesterday's JavaScript Homework
 <p> [Homework Assignment Solutions](https://github.com/star-city-code-school/w07-d01-js-exercises/pull/1) <br>
