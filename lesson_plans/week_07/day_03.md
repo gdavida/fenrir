@@ -164,6 +164,33 @@ Either approach is fine.
 
 ---
 
+# Bubbles? Bubbles!
+
+Suppose we have a `p` inside of a `div`, both of which have `click` events.  Which event should happen first?
+
+---
+
+# Bubbles? Bubbles!
+
+By default, the innermost element's event handler triggers first, then the outer one. This is called *bubbling*.
+
+Alternatively, we can *capture* the events, in which the outer element's event handler triggers first, then the inner one.
+
+---
+
+# Bubbles? Bubbles!
+
+To capture, we'll do something like this:
+
+```javascript
+  outerDiv.addEventListener("click", outerClickEvent, true);
+  innerP.addEventListener("click", innerClickEvent, true);
+```
+
+Again, the default is for events to bubble.
+
+---
+
 # Homework
 
 Build a [Tic-Tac-Toe game](https://github.com/star-city-code-school/w07-d03-tic-tac-toe).
