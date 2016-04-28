@@ -58,7 +58,7 @@ To make sure the JavaScript file compiles AFTER the HTML loads in, you need to a
 **Fun Fact:** <br>
   Need to clear **all** the child elements inside a parent node? <br>
   call ``` PARENT_CONTAINER_EXAMPLE.innerHTML = ""; ``` <br>
-  It is argueably one of the fastest, most efficient ways to clean up specified sections fo your HTML page. <br>
+  It is arguably one of the fastest, most efficient ways to clean up specified sections of your HTML page. <br>
   **HOWEVER**, this is an **"all or nothing"** move -- don't use it if you want to selectively eliminate child nodes.
 
 ## Tic Tac Toe 
