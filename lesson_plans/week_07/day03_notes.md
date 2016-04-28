@@ -63,5 +63,5 @@ To make sure the JavaScript file compiles AFTER the HTML loads in, you need to a
 
 ## Tic Tac Toe 
   Here is an example of a fully functional 
-['tic tac toe' game](https://github.com/maedae/w07-d03-tic-tac-toe)<br>
-Again, as is common with programming, this is but one of the many, many ways to solve this problem. Even this code could benefit from further refactoring.
+['tic tac toe' game](https://github.com/maedae/w07-d03-tic-tac-toe).<br>
+Again, (as is common with programming) this is but one of the many, many ways to solve the problem. Even this code could benefit from further refactoring.
