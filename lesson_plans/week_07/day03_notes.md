@@ -44,7 +44,7 @@ This is just like Ruby's binding.pry -- use it to "pause" your JavaScript operat
 
 ---
 
-** things to remember ** <br>
+**things to remember** <br>
 If you put the Javascript script node in the header of your HTML file, all the Javascript sitting outside of functions or eventListeners will compile before your HTML even loads.
 This can cause problems if you are declaring variables with a value of HTML Ids, Classes, Tags, etc.
 To make sure the JavaScript file compiles AFTER the HTML loads in, you need to add an event listener for the page load
@@ -55,13 +55,13 @@ To make sure the JavaScript file compiles AFTER the HTML loads in, you need to a
     "ALL YOUR JAVASCRIPT GOES HERE"
   });
   ```
-** Fun Fact **
+**Fun Fact** <br>
   Need to clear **all** the child elements inside a parent node? <br>
   call ``` PARENT_CONTAINER_EXAMPLE.innerHTML = ""; ``` <br>
   It is argueably one of the fastest, most efficient ways to clean up specified sections fo your HTML page. <br>
   **HOWEVER**, this is an **"all or nothing"** move -- don't use it if you want to selectively eliminate child nodes.
 
-  ## Tic Tac Toe 
+## Tic Tac Toe 
   Here is an example of a fully functional 
 ['tic tac toe' game](https://github.com/maedae/w07-d03-tic-tac-toe)<br>
 Again, as is common with programming, this is but one of the many, many ways to solve this problem. Even this code could benefit from further refactoring.
