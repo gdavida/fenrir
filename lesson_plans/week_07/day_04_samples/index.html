@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="./script.js"></script>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Tabbed Demo</h1>
+      <nav>
+        <ul>
+          <li><a href="#" class="nav-item active" id="wolves-tab">Wolves</a></li>
+          <li><a href="#" class="nav-item inactive" id="howls-tab">Howls</a></li>
+          <li><a href="#" class="nav-item inactive" id="form-tab">Form</a></li>
+          <li><a href="#" class="nav-item inactive" id="about-tab">About</a></li>
+          <li><a href="#" class="inactive" id="modal-trigger">Modal?</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container visible" id="wolves-container">
+      <h1>Wolves</h1>
+    </div>
+    <div class="container hidden" id="howls-container">
+      <h1>Howls</h1>
+    </div>
+    <div class="container hidden" id="about-container">
+      <h1>About</h1>
+    </div>
+    <div class="container hidden" id="form-container">
+      <h1>Form</h1>
+      <form>
+        <div>
+          Username:
+          <input type="username">
+        </div>
+        <div>
+          Password
+          <input type="password" name="password" id="password-field" >
+          <p id="password-error">No error</p>
+        </div>
+        <div>
+          <input type="submit" value="Sign In" disabled="true"
+          id="submit-button">
+      </form>
+    </div>
+
+    <div class="modal-shader hidden" id="modal-shader"></div>
+
+    <div class="modal-wrapper hidden" id="modal-wrapper">
+      <h2>Modal!</h2>
+      <a href="#" id="modal-close">Click to close</a>
+    </div>
+
+    
+
+
+  </body>
+</html>
