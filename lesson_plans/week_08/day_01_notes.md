@@ -21,17 +21,17 @@
 
 ## Creating a Project in Rails
 on the command line: <br>
-1. ``` $ rails new PROJECT_NAME - d postgresql ```<br>
-('-d postgresql' _is your database adapter. That bit of code specifies what type of db language the project will use)_
+- ``` $ rails new PROJECT_NAME - d postgresql ``` <br>
+- ('-d postgresql' _is your database adapter. That bit of code specifies what type of db language the project will use)_
 
-2. cd into your program, then run ``` bundle install ```
+- cd into your program, then run ``` bundle install ```
 
-3. Check out what you made by entering: ``` ls -l ``` 
+- Check out what you made by entering: ``` ls -l ``` 
 
-4. Generate a model:<br>
+- Generate a model:<br>
 ```rails generate model tableName column_name:data_type column_name2:date_type ```
 
-5. Generate a controller for your model: <br>
+- Generate a controller for your model: <br>
 ``` rails generate controller tableName ``` <br>
 _( you can create controller functions, view pages and routes from the command line, but for practice and better understanding of Rails, try to do those by hand for the first few tiny projects)_
 
@@ -79,17 +79,16 @@ If you don't specify a page to render in the controller, Rails will assume you a
 
 #### Rails
 
-- ``` rails server ``` ** or ** ``` rails s ```  _(**control + c** to exit your server)_
+- ``` rails server ```  ** or **  ``` rails s ```  _(** control + c ** to exit your server)_
 - ``` rails console ``` _(like repl or binding.pry)_
 - ``` rails generate model tableName column_name:data_type column_name2:data_type ```
 - ``` rails generate controller tableName function names go here with spaces between them ```
----
 
 ## Forms in Rails 
 [List of Form Tag Helpers](http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html)
 
 <a href="http://i.imgur.com/kK8b9QA.jpg"><img src="http://i.imgur.com/kK8b9QA.jpg" alt="URL Breakdown" style="width:600px; max-height:400px"></a>
-<p> Example of Form Tag in Rails </p>
+<p> Example of Form_Tag in Rails </p>
 
 <p> Form tags are a great reason to consider using the Rails ** alias ** feature, rather than the direct route path. If you need to change your route path (but leave the alias alone) you will not need to update every view page where you referenced that route. </p>
 While creating forms in Rails, [you need to use some sort of form helper](http://guides.rubyonrails.org/form_helpers.html). Each time a form element is built, it contains a random, encoded sequence that is also submitted with the form. You can't really spoof this by hand. If you try to create a form without utilizing a form helper, you're going to hit a lot of errors...and it probably won't work.
