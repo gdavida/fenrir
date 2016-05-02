@@ -79,7 +79,7 @@ If you don't specify a page to render in the controller, Rails will assume you a
 
 #### Rails
 
-- ``` rails server ```  ** or **  ``` rails s ```  _(** control + c ** to exit your server)_
+- ``` rails server ```  or  ``` rails s ```  _(control + c to exit your server)_
 - ``` rails console ``` _(like repl or binding.pry)_
 - ``` rails generate model tableName column_name:data_type column_name2:data_type ```
 - ``` rails generate controller tableName function names go here with spaces between them ```
