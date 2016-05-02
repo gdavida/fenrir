@@ -2,7 +2,7 @@
 
 ## Suggested Rails Prep 
 
-[Michael Hartl's Ruby on Rails Tutorial](rails-tutorial.org/book) _(read Chapters 1 - 5 for a really good rundown on Rails basics)_
+[Michael Hartl's Ruby on Rails Tutorial](http://www.rails-tutorial.org/book) _(read Chapters 1 - 5 for a really good rundown on Rails basics)_
 
 ---
 
