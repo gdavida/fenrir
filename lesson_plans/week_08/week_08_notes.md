@@ -1,6 +1,6 @@
 <center><h1> Week 08 Notes </h1></center>
 
-## Table of Contents <br />
+## <a name="back_to_top" />Table of Contents <br />
 
 ### DAY 01 && 02:
 1. [Suggested Rails Prep](#suggested_rails_prep) 
@@ -28,6 +28,7 @@
 <br>
 
 ##<a name="suggested_rails_prep" />Suggested Rails Prep 
+<sub> [[Table of Contents]](#back_to_top) </sub>
 
 [Michael Hartl's Ruby on Rails Tutorial](http://www.rails-tutorial.org/book) _(read Chapters 1 - 5 for a really good rundown on Rails basics)_
 
@@ -45,7 +46,9 @@
 <br>
 <br>
 
-## <a name="rails_overview" />Rails Overview
+## <a name="rails_overview" />Rails Overview 
+<sub> [[Table of Contents]](#back_to_top) </sub>
+
 - Uses MVC framework. 
 - Invented in 2005 by [David Heinemeier Hansson](https://twitter.com/dhh?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor).
 - The Rails framework is a collection of gems and helpers (ActiveRecord, ActiveMailer, etc.).
@@ -71,6 +74,8 @@
 <br>
 
 ## <a name="creating_rails_project" />Creating a Project in Rails
+<sub> [[Table of Contents]](#back_to_top) </sub>
+
 on the command line: <br>
 1. ``` $ rails new PROJECT_NAME - d postgresql ```<br>
 ('-d postgresql' _is your database adapter. That bit of code specifies what type of db language the project will use)_
@@ -131,6 +136,7 @@ If you don't specify a page to render in the controller, Rails will assume you a
 <br>
 
 ## <a name="rake_rails_command" />Rails / Rake Commands (FYI)
+<sub> [[Table of Contents]](#back_to_top) </sub>
 
 #### Rake
 - ``` rake db:create ``` _(creates a database from schema and seeds info)_
@@ -162,6 +168,8 @@ If you don't specify a page to render in the controller, Rails will assume you a
 <br>
 
 ## <a name="forms_in_rails" />Forms in Rails 
+<sub> [[Table of Contents]](#back_to_top) </sub>
+
 [List of Form Tag Helpers](http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html)
 
 <a href="http://i.imgur.com/kK8b9QA.jpg"><img src="http://i.imgur.com/kK8b9QA.jpg" alt="URL Breakdown" style="width:600px; max-height:400px"></a>
@@ -176,7 +184,8 @@ While creating forms in Rails, [you need to use some sort of form helper](http:/
 <br>
 
 ## <a name="todos" /> TODOs (and other ways make notes in your program)
-<br> 
+<sub> [[Table of Contents]](#back_to_top) </sub>
+
 In many cases, it is often better to document things in [GitHub Issues](https://guides.github.com/features/issues/) 
 or other [project management programs](http://www.techworld.com/picture-gallery/startups/10-best-free-project-management-software-programs-3625922/) (There are sooooo many free platforms out there. Perhaps TOO many...). 
 If used correctly, your PM software can be a huge asset when doing collaborative work. 
@@ -220,6 +229,7 @@ rake notes
 
 
 ## <a name="partials" />Partials
+<sub> [[Table of Contents]](#back_to_top) </sub>
 
 partial files look a lot like regular view files, however they have an underscore at the beginning of the title.
 
@@ -268,6 +278,8 @@ On view page utilizing the partial, use:
 <br>
 
 ## <a name="guard" />Guard 
+<sub> [[Table of Contents]](#back_to_top) </sub>
+
 Using this gem file is 100% optional (but is amazing and definitely worth trying out)
 If you add a gem to your gem file, add a comment with a link to the repo, as well as a brief description of what it is (it's just good practice. other devs will love and appreciate you).
 
@@ -295,6 +307,7 @@ It will alert you via the top, right-hand corner of the screen of passing tests 
 <br>
 
 ## <a name="annotate" />Annotate
+<sub> [[Table of Contents]](#back_to_top) </sub>
 
 [Annotate](https://github.com/ctran/annotate_models): Gem file adds a comment that annotates several files in your project for you. 
 For example — it will add the schema of the model as a comment when running rake db:migrate so that you don't need to keep referring to your schema.
@@ -314,6 +327,8 @@ For example — it will add the schema of the model as a comment when running ra
 <br>
 
 ## <a name="gemfile_practices" />Gemfile Practices:
+<sub> [[Table of Contents]](#back_to_top) </sub>
+
 If the gem'ss only purpose is to aid in your workflow, make sure it goes in the development section, or it will appear on your production server and can cause problem or annoyances.
 
 <br>
@@ -331,6 +346,8 @@ If the gem'ss only purpose is to aid in your workflow, make sure it goes in the 
 <br>
 
 ## <a name="collaborative_work" />Collaborative Work
+<sub> [[Table of Contents]](#back_to_top) </sub>
+
 Definitely try considering the implementation of a a project manager platform. 
 [Waffle](https://waffle.io/), [Zube](http://www.zube.io), or [Vanilla Github Issues](https://guides.github.com/features/issues/)
 1. Get setup on both computers (adding a collaborator, setting up issues, etc.)
