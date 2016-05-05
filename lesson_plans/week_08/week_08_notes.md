@@ -1,7 +1,6 @@
 <center><h1> Week 08 Notes </h1></center>
 
-Table of Contents:
-
+##Table of Contents:
 ### DAY 01 && 02:
 1. [Suggested Rails Prep](#suggested_rails_prep) 
 2. [Rails Overview](#rails_overview)
