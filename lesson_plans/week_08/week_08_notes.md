@@ -328,7 +328,7 @@ For example — it will add the schema of the model as a comment when running ra
 ## <a name="gemfile_practices" />Gemfile Practices:
 <sub> [[Table of Contents]](https://github.com/star-city-code-school/fenrir/blob/master/lesson_plans/week_08/week_08_notes.md) </sub>
 
-If the gem'ss only purpose is to aid in your workflow, make sure it goes in the development section, or it will appear on your production server and can cause problem or annoyances.
+If the only purpose of a gem is to aid in your workflow, make sure it goes in the development section, or it will appear on your production server and can cause problem or annoyances in the future.
 
 <br>
 <br>
@@ -349,6 +349,8 @@ If the gem'ss only purpose is to aid in your workflow, make sure it goes in the 
 
 Definitely try considering the implementation of a a project manager platform. 
 [Waffle](https://waffle.io/), [Zube](http://www.zube.io), or [Vanilla Github Issues](https://guides.github.com/features/issues/)
+
+
 1. Get setup on both computers (adding a collaborator, setting up issues, etc.)
 
 2. Pick a computer
