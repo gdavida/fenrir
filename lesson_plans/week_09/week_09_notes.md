@@ -12,7 +12,7 @@
 <br>
 <br>
 ## <a name="user_authentication" /> User Authentication
-<sub>[[Return to Table of Contents]](URL HERE)</sub>
+<sub>[[Return to Table of Contents]](https://github.com/star-city-code-school/fenrir/blob/master/lesson_plans/week_09/week_09_notes.md)</sub>
 <br>
 <br>
 
@@ -41,7 +41,7 @@ someone only has the "crypted password. The original password is never actually 
 <br>
 
 ## <a name="sorcery" />Sorcery (User Authentication Gem)
-<sub>[[Return to Table of Contents]](URL HERE)</sub>
+<sub>[[Return to Table of Contents]](https://github.com/star-city-code-school/fenrir/blob/master/lesson_plans/week_09/week_09_notes.md)</sub>
 <br>
 <br>
 
