@@ -6,6 +6,11 @@
 1. [User Authentication](#user_authentication)
 2. [Sorcery](#sorcery)
 
+#### DAY 02
+
+#### DAY 03
+1.[Controller Tests](#controller_tests)
+
 ------
 <br>
 <br>
@@ -21,8 +26,6 @@
   - password 
   - user model 
   - user model with CRUD operations
-
-NEVER EVER EVER USE GET when logging someone in.
 
 To keep a person safely logged in, you'll probably want to store the user id in session data.
 When storing the login password in the database, it is standard practice to make sure that the passwords are encrypted. That way, if database security is ever compromised, 
@@ -68,3 +71,79 @@ you'll eventually be quite thankful for the ability to customize the look, feel,
 Russian blogger, Ilya Bodrov, offers a very in-depth tutorial on how to set up user authentication and creation with Sorcery. Check it out if you find yourself feeling overwhelmed. 
 
 [Sorcery Tutorial](http://www.sitepoint.com/magical-authentication-sorcery/)
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+------
+
+<br>
+<br>
+<br>
+<br>
+
+## <a name="controller_tests" /> Controller Tests 
+<sub>[[Return to Table of Contents]](https://github.com/star-city-code-school/fenrir/blob/master/lesson_plans/week_09/week_09_notes.md)</sub>
+
+####  Testing Users Controller (When using Sorcery)
+
+The first thing you need to do is teach your program how to use Sorcery in its test environment. 
+
+In your test_helper.rb file, paste:
+
+```
+class ActionController::TestCase
+  include Sorcery::TestHelpers::Rails::Integration
+  include Sorcery::TestHelpers::Rails::Controller
+end
+
+```
+
+
+
+This allows our test the controllers of any models we created with Sorcery. 
+
+create and edit controller tests require params. 
+create and edit should also be listed as "post."
+
+#### CREATE
+
+```
+test "should successfully create user" do 
+  post :create, user: { name: "test", email:"test@test.com", password: "password", password_confirmaton: "password" }
+  assert_redirected_to users_path 
+end
+```
+
+```
+test "should not create user" do 
+  post :create, user: { name: "test", email:"test@test.com", password: "password", password_confirmaton: "password" }
+  assert_template :new
+end
+```
+
+#### SHOW (W/ Authentication Checks) 
+_--for the sake of the assignment, we will assume that a user should not be able to see this page unless logged in_
+
+```
+test "should redirect from show to login path" do 
+  @user = User.create!(name: "test", email: "test@test.com", password: "password", password_confirmation: "password")
+  get :show, id: @user  
+  assert_redirected_to login_path
+end
+```
+```
+test "should show when logged in" do 
+  @user = User.create!(name: "test", email: "test@test.com", password: "password", password_confirmation: "password")
+  login_user(user=@user, route=login_path)
+  get :show, id: @user
+  assert_response :success
+end
+```
+
+These are only very basic examples of tests. You can test for any number of situations. For example, you can also use assert_differences to keep track of the variable's corresponding table count at successful / unsuccessful creation, destruction, update, etc. 
+
