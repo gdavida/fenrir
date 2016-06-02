@@ -326,7 +326,7 @@ We're not restricted to just using *`this`*. We can pass in any element:
 1. Create a `gh-pages` branch.
 2. In that branch, provide an `index.html` (plus JS and CSS).
 3. Push it, but don't ever merge back into the *master* branch.
-4. Navigate to `github.io/yourusername/repositoryname`
+4. Navigate to `yourusername/github.io/repositoryname`
 
 ---
 
